@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational Resource Sharing Platform - Share and discover learning materials">
+    <title>EduShare - Educational Resource Platform</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/index.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">EduShare</div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/gallery.html">Gallery</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/creators.html">Creators</a></li>
+                    <li><a href="pages/partners.html">Partners</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Share Knowledge, Empower Learning</h1>
+            <p>Discover and share high-quality educational resources with learners worldwide</p>
+            <button class="cta-button">Browse Resources</button>
+        </section>
+
+        <section class="featured-resources">
+            <h2>Featured Resources</h2>
+            <div class="resource-grid">
+                <article class="resource-card">
+                    <img src="../images/resource1.jpg" alt="Mathematics study guide" loading="lazy">
+                    <h3>Advanced Calculus Guide</h3>
+                    <span class="resource-type">Study Notes</span>
+                </article>
+                <!-- Additional resource cards... -->
+            </div>
+        </section>
+
+        <section class="quick-stats">
+            <div class="stat-item">
+                <span class="stat-number">1000+</span>
+                <span class="stat-label">Resources</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Subjects</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5000+</span>
+                <span class="stat-label">Active Users</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/gallery.html">Gallery</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/creators.html">Creators</a></li>
+                    <li><a href="pages/partners.html">Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <address>
+                    <p>Email: contact@edushare.com</p>
+                    <p>Tel: (123) 456-7890</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduShare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple menu toggle functionality
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            
+            nav.classList.toggle('active');
+            this.setAttribute('aria-expanded', !isExpanded);
+        });
+    </script>
+</body>
+</html>

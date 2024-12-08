@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about EduShare - Your Educational Resource Sharing Platform">
+    <title>About - EduShare Platform</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/about.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">EduShare</div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="creators.html">Creators</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="personal-intro">
+            <div class="profile-container">
+                <img src="../images/profile.jpg" alt="Platform Creator" loading="lazy" class="profile-image">
+                <div class="intro-content">
+                    <h1>About EduShare</h1>
+                    <p class="role">Educational Resource Platform</p>
+                    <p class="statement">Empowering students through collaborative learning and resource sharing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-expertise">
+            <h2>Platform Features & Capabilities</h2>
+            <div class="skills-grid">
+                <div class="skill-card" tabindex="0">
+                    <h3>Resource Types</h3>
+                    <ul class="skill-list">
+                        <li>Book Summaries</li>
+                        <li>Study Notes</li>
+                        <li>Presentations</li>
+                        <li>Practice Tests</li>
+                        <li>Research Papers</li>
+                    </ul>
+                </div>
+                <div class="skill-card" tabindex="0">
+                    <h3>Platform Features</h3>
+                    <ul class="skill-list">
+                        <li>Content Verification</li>
+                        <li>Peer Reviews</li>
+                        <li>Multi-subject Support</li>
+                        <li>Resource Rating</li>
+                    </ul>
+                </div>
+                <div class="skill-card" tabindex="0">
+                    <h3>User Benefits</h3>
+                    <ul class="skill-list">
+                        <li>Free Access</li>
+                        <li>Community Support</li>
+                        <li>Quality Content</li>
+                        <li>Regular Updates</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-details">
+            <h2>Our Mission</h2>
+            <div class="mission-content">
+                <p>EduShare aims to create an open educational ecosystem where knowledge flows freely between students.</p>
+                <p>We believe in the power of collaborative learning and peer-to-peer knowledge sharing to enhance the educational experience for everyone.</p>
+            </div>
+        </section>
+
+        <section class="platform-stats">
+            <h2>Platform Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card" tabindex="0">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat-card" tabindex="0">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Resources Shared</span>
+                </div>
+                <div class="stat-card" tabindex="0">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Subject Areas</span>
+                </div>
+                <div class="stat-card" tabindex="0">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">User Satisfaction</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="additional-info">
+            <h2>Platform Statistics</h2>
+            <div class="stats-container">
+                <!-- Stats content -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="creators.html">Creators</a></li>
+                    <li><a href="partners.html">Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <address>
+                    <p>Email: contact@edushare.com</p>
+                    <p>Tel: (123) 456-7890</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduShare. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Menu toggle functionality
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            nav.classList.toggle('active');
+            this.setAttribute('aria-expanded', !isExpanded);
+        });
+    </script>
+</body>
+</html>
